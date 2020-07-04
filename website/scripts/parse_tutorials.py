@@ -50,7 +50,7 @@ def gen_tutorials(repo_dir: str) -> None:
         print("Generating {} tutorial".format(tid))
 
         # convert notebook to HTML
-        ipynb_in_path = os.path.join(repo_dir, "tutorials", "{}.ipynb".format(tid))
+        ipynb_in_path = os.path.join(repo_dir, "website/tutorials", "{}.ipynb".format(tid))
         with open(ipynb_in_path, "r") as infile:
             nb_str = infile.read()
             nb = nbformat.reads(nb_str, nbformat.NO_CONVERT)

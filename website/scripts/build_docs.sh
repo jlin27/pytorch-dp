@@ -74,7 +74,7 @@ echo "Generating tutorials"
 echo "-----------------------------------"
 mkdir -p "website/_tutorials"
 mkdir -p "website/static/files"
-python scripts/parse_tutorials.py -w "${cwd}"
+python website/scripts/parse_tutorials.py -w "${cwd}"
 
 cd website || exit
 
